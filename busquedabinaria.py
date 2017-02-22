@@ -30,7 +30,7 @@ def simple(x,c):
             return True
     return False
 print("Long","prombinT", "prombinV",  "promsimT", "promsimV")
-for L in [5,10, 20, 40, 80, 200, 500,1000, 5000]:
+for L in [5,10, 20, 40, 80, 200, 500,1000, 5000,10000, 30000]:
     arreglo = gen(L)
     sumabin=0
     sumasim=0
