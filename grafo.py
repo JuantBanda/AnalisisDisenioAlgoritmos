@@ -26,22 +26,15 @@ class grafo:
         candidatos=set()
         checados.add(base)
         candidatos.add(base)
-        print(checados)
-        print(candidatos)
-        #band=True
         while(True):
             if len(candidatos)==0:
                 return False
                 break
             base=candidatos.pop()
-            print(base)
             for j in range(len(self.salidas[base])):
                 punt=self.salidas[base][j]
                 if punt==final:
                     return True
-                    #band=False
-                    #break
-
                 if punt not in checados:
                     candidatos.add(punt)
 
@@ -59,6 +52,9 @@ G.conecta('b', 'e', 8)
 G.conecta('a', 'f', 7)
 G.conecta('f', 'e', 6)
 G.conecta('e', 'd', 5)
+
+G.conecta('f', 'a', 10)
+
 print("Nodos:",G.nodos)
 print("Aristas con pesos:",G.aristas)
 print("--------------------------------------------")
@@ -68,41 +64,7 @@ print("Grado de c:", len(G.vecinos['c']))
 print("Grado de d:", len(G.vecinos['d']))
 print("salidas totales:", G.salidas)
 
-#del G.salidas['a'][0]
-#print(G.salidas)
 print("--------------------------------------------")
 
-print("Hay un camino de 'a' a 'd'?")
-print(G.camino("a", "d"))
-inicio="a"
-final="c"
-base=inicio
-checados=set()
-candidatos=set()
-checados.add(base)
-candidatos.add(base)
-print(checados)
-print(candidatos)
-
-#print("d" in G.salidas[base])
-x=True
-while(x==True):
-    if len(candidatos)==0:
-        print("no hay camino")
-        break
-    base=candidatos.pop()
-    print(base)
-    for j in range(len(G.salidas[base])):
-        punt=G.salidas[base][j]
-        if punt==final:
-            print("si hay camino")
-            x=False
-            break
-
-        if punt not in checados:
-            candidatos.add(punt)
-    #candidatos.remove(base)
-
-print('********')
-print(checados)
-print(candidatos)
+print("Hay un camino de 'f' a 'c'?")
+print(G.camino("f", "c"))
