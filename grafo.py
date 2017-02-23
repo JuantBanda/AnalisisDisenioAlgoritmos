@@ -38,21 +38,14 @@ class grafo:
                 if punt not in checados:
                     candidatos.add(punt)
 
-
-
-
-
-
 G = grafo()
 G.conecta('a', 'b', 1)
 G.conecta('b', 'c', 2)
 G.conecta('c', 'd', 3)
-#G.conecta('a', 'd', 4)
 G.conecta('b', 'e', 8)
 G.conecta('a', 'f', 7)
 G.conecta('f', 'e', 6)
 G.conecta('e', 'd', 5)
-
 G.conecta('f', 'a', 10)
 
 print("Nodos:",G.nodos)
@@ -63,8 +56,6 @@ print("Vecinos de d:",G.vecinos['d'])
 print("Grado de c:", len(G.vecinos['c']))
 print("Grado de d:", len(G.vecinos['d']))
 print("salidas totales:", G.salidas)
-
 print("--------------------------------------------")
-
 print("Hay un camino de 'f' a 'c'?")
 print(G.camino("f", "c"))
