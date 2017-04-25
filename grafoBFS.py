@@ -62,3 +62,4 @@ while len(agregados) > 0:
                 siguientes.add(w)
     agregados = siguientes
 print(nivel)
+
