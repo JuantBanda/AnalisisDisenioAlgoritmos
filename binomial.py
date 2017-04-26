@@ -2,7 +2,7 @@ from math import log, exp
 def binom_exacto(n,k):
     mayor=max(n-k,k)
     menor=min(n-k,k)
-    prod=1
+    prod=1 
     for x in range(mayor+1, n+1):
         prod*=x
     otro_prod=1
