@@ -28,3 +28,4 @@ for i in numbin1:
 num1=int(str(aux), 2)
 
 print("Num:",numero,"Num+1:", num1)
+ 
