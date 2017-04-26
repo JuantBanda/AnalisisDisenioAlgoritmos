@@ -36,7 +36,7 @@ for L in [5,10, 20, 40, 80, 200, 500,1000, 5000,10000, 30000]:
     sumasim=0
     for a in arreglo:
         #ciclo que regresa el costo de de buscar en la lista un elemento de la lista
-        COSTO = 0
+        COSTO = 0 
         assert binaria(arreglo, a) == True
         #print('bin', True, L, COSTO)
         sumabin+=COSTO
