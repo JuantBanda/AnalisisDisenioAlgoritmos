@@ -74,3 +74,4 @@ for x in G.nodos:
 
 dmG=(1/(2*len(G.nodos)))*sm_dmv#distancia media del grafo
 print(">Distancia media del grafo>>>", dmG)
+
