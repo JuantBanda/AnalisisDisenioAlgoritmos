@@ -5,7 +5,7 @@ reglas['se']=['q','e',-1]
 reglas['sp']=['s','p',1]
 reglas['q0']=['alto',1,0]
 reglas['q1']=['q',0,-1]
-reglas['qp']=['alto','p',1]
+reglas['qp']=['alto','p',1] 
 
 numero=2016
 bin0=(bin(numero)[2:])
