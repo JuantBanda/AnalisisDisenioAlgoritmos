@@ -35,7 +35,7 @@ def triplesat(A, linea, tipo, Nclau):
                     checa = var[1:]
                 cierto = (checa in A)
                 if neg:
-                    cierto = not cierto
+                    cierto = not cierto 
                 if(cierto==False):
                     break
                 k+=1
