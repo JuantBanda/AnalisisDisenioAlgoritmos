@@ -10,5 +10,5 @@ while potencia > 0:
         r = r % mod
     potencia = potencia >> 1
     v *= v
-    v = v % mod
+    v = v % mod 
 print("Valor con truco: ",r, "Valor librería:", num**pot % mod)
