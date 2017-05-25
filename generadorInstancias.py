@@ -34,7 +34,7 @@ def genera_instancias():
         return
 
     aristas=input("Introduce el número de aristas: ")
-    try:
+    try: 
         aristas=int(aristas)
     except:
         print("Error de captura, valor no numérico")
