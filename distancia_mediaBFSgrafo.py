@@ -34,7 +34,7 @@ class grafo:
                 punt=self.salidas[base][j]
                 if punt==final:
                     return True
-                if punt not in checados:
+                if punt not in checados: 
                     candidatos.add(punt)
 
     def BFS(self,semilla):
