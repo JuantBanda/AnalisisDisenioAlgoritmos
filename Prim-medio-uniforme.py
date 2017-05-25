@@ -88,7 +88,7 @@ class grafo:
         else:
             print('no se puede usar el método ya que el grafo no es conexo')
 
-def generainst_conmed_unif(nodos):
+def generainst_conmed_unif(nodos): 
     aristas=ceil(nodos*(nodos-1)/4)
     ci=1
     cs=1000
