@@ -35,7 +35,7 @@ while True:
     ve=np.dot(-mu, w)
     m=np.full((1,nvar),0)
     x=np.full((1,nvar),0)
-    falsos=[]
+    falsos=[] 
     for s in range(nvar):
         m[0][s]=1/(1+math.exp(ve[0][s]))
         if m[0][s]>=.5:
