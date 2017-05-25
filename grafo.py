@@ -36,7 +36,7 @@ class grafo:
                 if punt==final:
                     return True
                 if punt not in checados:
-                    candidatos.add(punt) 
+                    candidatos.add(punt)  
 
 G = grafo()
 #G.conecta('a', 'b', 1)
